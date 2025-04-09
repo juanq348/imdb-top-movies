@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Datos - Proyecto de Visualización</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Análisis de Datos del Proyecto [Nombre]</h1>
+            <p class="subtitle">Un estudio profundo sobre [tema principal] y su impacto en [sector/industria]</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2 class="section-title">Sobre este Análisis</h2>
+                    <p>Este proyecto presenta un análisis exhaustivo de [tema específico] utilizando datos recopilados de [fuentes]. El estudio se enfoca en resolver [problema principal] y entender [aspectos clave] que afectan a [población/industria].</p>
+                    <p>A través de técnicas avanzadas de análisis de datos y visualización, hemos identificado patrones significativos que ayudan a comprender mejor [fenómeno] y proporcionar insights valiosos para la toma de decisiones.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="images/intro-image.jpg" alt="Representación visual de datos">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="methodology">
+        <div class="container">
+            <h2 class="section-title">Metodología</h2>
+            <div class="methodology-content">
+                <div class="method-card">
+                    <h3>Recolección de Datos</h3>
+                    <p>Los datos fueron recopilados de [fuentes específicas] durante el período [tiempo]. Se aplicaron técnicas de limpieza para asegurar la calidad y consistencia de los datos antes del análisis.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Procesamiento y Análisis</h3>
+                    <p>Utilizamos Python y sus bibliotecas (Pandas, NumPy, Scikit-learn) para procesar y analizar los datos. Se aplicaron técnicas como [técnicas específicas] para extraer patrones significativos.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Visualización</h3>
+                    <p>Las visualizaciones fueron creadas con Matplotlib, Seaborn y Plotly en Jupyter Notebooks, permitiendo una exploración interactiva y detallada de los resultados del análisis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visualizations">
+        <div class="container">
+            <h2 class="section-title">Visualizaciones</h2>
+            
+            <div class="viz-tabs">
+                <div class="viz-tab active" data-tab="exploratorio">Análisis Exploratorio</div>
+                <div class="viz-tab" data-tab="correlaciones">Correlaciones</div>
+                <div class="viz-tab" data-tab="tendencias">Tendencias Temporales</div>
+                <div class="viz-tab" data-tab="predictivo">Análisis Predictivo</div>
+            </div>
+            
+            <div class="viz-content active" id="exploratorio">
+                <div class="viz-grid">
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/exploratorio-1.jpg" alt="Distribución de variables">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Distribución de Variables</h3>
+                            <p>Análisis de la distribución de las principales variables en nuestro conjunto de datos, revelando patrones clave en [característica].</p>
+                        </div>
+                    </div>
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/exploratorio-2.jpg" alt="Boxplots comparativos">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Comparativa por Grupos</h3>
+                            <p>Boxplots que muestran la variación de [variable] entre diferentes [categorías/grupos], destacando diferencias significativas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="viz-content" id="correlaciones">
+                <div class="viz-grid">
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/correlaciones-1.jpg" alt="Matriz de correlación">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Matriz de Correlación</h3>
+                            <p>Visualización de las relaciones entre todas las variables numéricas del estudio, revelando asociaciones significativas.</p>
+                        </div>
+                    </div>
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/correlaciones-2.jpg" alt="Gráfico de dispersión">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Relación entre Variables Clave</h3>
+                            <p>Análisis detallado de la relación entre [variable 1] y [variable 2], mostrando un patrón de [tipo de relación].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="viz-content" id="tendencias">
+                <div class="viz-grid">
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/tendencias-1.jpg" alt="Series temporales">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Evolución Temporal</h3>
+                            <p>Análisis de la evolución de [variable] durante el período [rango de tiempo], mostrando tendencias significativas.</p>
+                        </div>
+                    </div>
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/tendencias-2.jpg" alt="Descomposición de serie temporal">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Componentes Estacionales</h3>
+                            <p>Descomposición de la serie temporal en sus componentes de tendencia, estacionalidad y residuos para [variable].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="viz-content" id="predictivo">
+                <div class="viz-grid">
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/predictivo-1.jpg" alt="Modelo predictivo">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Resultados del Modelo</h3>
+                            <p>Visualización de los resultados del modelo [tipo de modelo] para predecir [variable objetivo], con una precisión del [porcentaje]%.</p>
+                        </div>
+                    </div>
+                    <div class="viz-item">
+                        <div class="viz-image">
+                            <img src="images/predictivo-2.jpg" alt="Importancia de variables">
+                        </div>
+                        <div class="viz-info">
+                            <h3>Importancia de Variables</h3>
+                            <p>Análisis de las variables más influyentes en nuestro modelo predictivo, destacando el papel crucial de [variables clave].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="findings">
+        <div class="container">
+            <h2 class="section-title">Hallazgos Principales</h2>
+            
+            <div class="finding-card">
+                <h3>Hallazgo 1: [Título del hallazgo]</h3>
+                <p>Se descubrió que [descripción del hallazgo principal 1], lo cual contradice la hipótesis inicial de que [hipótesis]. Este resultado sugiere que [implicación] y podría tener un impacto significativo en [área de aplicación].</p>
+            </div>
+            
+            <div class="finding-card">
+                <h3>Hallazgo 2: [Título del hallazgo]</h3>
+                <p>El análisis reveló una fuerte correlación (r = [valor]) entre [variable 1] y [variable 2]. Esta relación se mantiene incluso después de controlar por [variables de control], lo que sugiere [interpretación].</p>
+            </div>
+            
+            <div class="finding-card">
+                <h3>Hallazgo 3: [Título del hallazgo]</h3>
+                <p>Se identificó un patrón estacional claro en [variable], con picos en [período] y valles en [período]. Este patrón explica aproximadamente el [porcentaje]% de la variabilidad observada y tiene implicaciones importantes para [aplicación].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="container">
+            <h2 class="section-title">Conclusiones</h2>
+            <p>Este análisis de datos ha proporcionado insights valiosos sobre [tema principal]. Los resultados sugieren que [conclusión principal] y destacan la importancia de [factor clave] en [contexto].</p>
+            <p>Las implicaciones de estos hallazgos son relevantes para [stakeholders], y pueden informar decisiones en áreas como [áreas de aplicación].</p>
+            <a href="#" class="cta-button">Descargar Informe Completo</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 [Tu Nombre] - Análisis de Datos</p>
+            <div class="contact">
+                <p>¿Preguntas o comentarios? <a href="mailto:contacto@ejemplo.com">Contáctame</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
