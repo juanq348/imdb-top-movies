@@ -14,7 +14,7 @@ plt.ylabel("Películas")
 plt.title("Top 10 de Películas según Imdb")
 plt.gca().invert_yaxis()
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/top_10_peliculas.jpg")
+plt.savefig("../frontend/src/assets/graficos/top_10_peliculas.jpg")
 
 # Distribución de los géneros más comunes
 generos_separados = df["genre"].dropna().str.split(",")
@@ -28,7 +28,7 @@ plt.figure(figsize=(10, 10))
 plt.pie(generos_comunes, labels=generos_comunes.index, autopct='%1.1f%%', startangle=90, colors=colors, wedgeprops=dict(edgecolor='white'))
 plt.title("Distribución de los géneros más comunes")
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/generos_comunes.jpg")
+plt.savefig("../frontend/src/assets/graficos/generos_comunes.jpg")
 plt.close()
 
 # Directores con más películas
@@ -43,7 +43,7 @@ plt.ylabel("Nombre de los Directores")
 plt.title("Top 10 Directores con más Películas en el top de IMDb")
 plt.gca().invert_yaxis()
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/top_directores.jpg")
+plt.savefig("../frontend/src/assets/graficos/top_directores.jpg")
 
 # Actores más solicitados 
 actores_separados = df["casts"].dropna().str.split(",")
@@ -57,7 +57,7 @@ plt.title("Los 10 actores más solicitados")
 plt.gca().invert_yaxis()
 plt.xticks(range(0, max(top_10_actores.values)+1))
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/actores_solicitados.jpg")
+plt.savefig("../frontend/src/assets/graficos/actores_solicitados.jpg")
 
 # Conversión de valores "Not Available" a valores númericos
 df["box_office"] = df["box_office"].replace("Not Available", pd.NA)
@@ -77,7 +77,7 @@ plt.ylabel("Películas")
 plt.gca().invert_yaxis()
 plt.gca().xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:,.0f}M'))
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/peliculas_taquilleras.jpg")
+plt.savefig("../frontend/src/assets/graficos/peliculas_taquilleras.jpg")
 
 # Conversión a Dolares
 def convertir_a_dolares(row):
@@ -100,4 +100,4 @@ plt.xticks(rotation = 45)
 plt.gca().invert_yaxis()
 plt.gca().xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x/1e6:,.0f}M'))   
 plt.tight_layout()
-plt.savefig("../frontend/src/public/assets/graficos/peliculas_caras.jpg")
+plt.savefig("../frontend/src/assets/graficos/peliculas_caras.jpg")
