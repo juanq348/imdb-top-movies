@@ -1,1 +1,0 @@
-import '../styles/actores_generos.css';
